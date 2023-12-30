@@ -1,0 +1,81 @@
+@define-mixin mainColor $colorToken, $color {
+	:root {
+		--palette-$(colorToken): $(color), 40%;
+		--palette-$(colorToken)-on: $(color), 100%;
+		--palette-$(colorToken)-container: $(color), 90%;
+		--palette-$(colorToken)-on-container: $(color), 10%;
+		--palette-$(colorToken)-fixed: $(color), 90%;
+		--palette-$(colorToken)-fixed-dim: $(color), 80%;
+		--palette-$(colorToken)-fixed-on: $(color), 10%;
+		--palette-$(colorToken)-fixed-on-variant: $(color), 30%;
+		--palette-$(colorToken)-inverse: $(color), 80%;
+	}
+
+	html[data-theme="dark"] {
+		--palette-$(colorToken): $(color), 80%;
+		--palette-$(colorToken)-on: $(color), 20%;
+		--palette-$(colorToken)-container: $(color), 30%;
+		--palette-$(colorToken)-on-container: $(color), 90%;
+		--palette-$(colorToken)-fixed: $(color), 90%;
+		--palette-$(colorToken)-fixed-dim: $(color), 80%;
+		--palette-$(colorToken)-fixed-on: $(color), 10%;
+		--palette-$(colorToken)-fixed-on-variant: $(color), 30%;
+		--palette-$(colorToken)-inverse: $(color), 40%;
+	}
+}
+
+@define-mixin actionColor $colorToken, $color {
+	:root {
+		--palette-$(colorToken): $(color), 40%;
+		--palette-$(colorToken)-on: $(color), 100%;
+		--palette-$(colorToken)-container: $(color), 90%;
+		--palette-$(colorToken)-on-container: $(color), 10%;
+	}
+
+	html[data-theme="dark"] {
+		--palette-$(colorToken): $(color), 80%;
+		--palette-$(colorToken)-on: $(color), 20%;
+		--palette-$(colorToken)-container: $(color), 30%;
+		--palette-$(colorToken)-on-container: $(color), 90%;
+	}
+}
+
+@define-mixin neutralColor $color {
+	:root {
+		--palette-surface-dim: $(color), 87%;
+		--palette-surface: $(color), 98%;
+		--palette-surface-bright: $(color), 98%;
+		--palette-surface-inverse: $(color), 20%;
+		--palette-surface-on: $(color), 10%;
+		--palette-surface-on-inverse: $(color), 95%;
+		--palette-surface-container: $(color), 94%;
+		--palette-surface-container-lowest: $(color), 100%;
+		--palette-surface-container-low: $(color), 96%;
+		--palette-surface-container-high: $(color), 92%;
+		--palette-surface-container-highest: $(color), 90%;
+		--palette-surface-on-variant: $(color), 30%;
+		--palette-surface-outline: $(color), 50%;
+		--palette-surface-outline-variant: $(color), 80%;
+		--palette-surface-scrim: $(color), 3%;
+		--palette-surface-shadow: $(color), 3%;
+	}
+
+	html[data-theme="dark"] {
+		--palette-surface-dim: $(color), 6%;
+		--palette-surface: $(color), 6%;
+		--palette-surface-bright: $(color), 12%;
+		--palette-surface-inverse: $(color), 90%;
+		--palette-surface-on: $(color), 90%;
+		--palette-surface-on-inverse: $(color), 20%;
+		--palette-surface-container: $(color), 12%;
+		--palette-surface-container-lowest: $(color), 4%;
+		--palette-surface-container-low: $(color), 10%;
+		--palette-surface-container-high: $(color), 17%;
+		--palette-surface-container-highest: $(color), 22%;
+		--palette-surface-on-variant: $(color), 80%;
+		--palette-surface-outline: $(color), 60%;
+		--palette-surface-outline-variant: $(color), 30%;
+		--palette-surface-scrim: $(color), 2%;
+		--palette-surface-shadow: $(color), 3%;
+	}
+}

@@ -1,0 +1,8 @@
+@layer utilities {
+	.cursor-inherit {
+		cursor: inherit;
+	}
+	.disablePadding {
+		@apply pt-0 pb-0 pr-0 pl-0;
+	}
+}

@@ -1,0 +1,20 @@
+@import url("./mixins");
+$primary: 189 94%;
+$secondary: 25 95%;
+$tertiary: 258 90%;
+$neutral: 215 55%;
+$error: 350 89%;
+$success: 160 84%;
+$warning: 46 97%;
+$test: 215 16%;
+$devosa: 0 0%;
+
+@layer base {
+	@mixin mainColor primary, $primary;
+	@mixin mainColor secondary, $secondary;
+	@mixin mainColor tertiary, $tertiary;
+	@mixin actionColor error, $error;
+	@mixin actionColor success, $success;
+	@mixin actionColor warning, $warning;
+	@mixin neutralColor $neutral;
+}
