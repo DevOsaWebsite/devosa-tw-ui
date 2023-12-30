@@ -2,7 +2,13 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+			cursor: {
+				inherit: {
+					cursor: 'inherit',
+				}
+			}
+		},
   },
   plugins: [],
 }
