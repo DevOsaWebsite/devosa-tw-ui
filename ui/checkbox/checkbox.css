@@ -1,0 +1,30 @@
+.checkbox-root {
+	@apply relative inline-flex items-center justify-center box-border bg-transparent outline-0 m-0 border-0 cursor-pointer select-none align-middle appearance-none rounded-full p-2.5;
+
+	input[type="checkbox"] {
+		@apply absolute top-0 left-0 m-0 p-0 opacity-0 w-full h-full  cursor-inherit z-10;
+	}
+	svg {
+		@apply select-none w-[1em] h-[1em] fill-current shrink-0 transition-all text-inherit;
+	}
+}
+.checkbox-sizeSmall {
+	@apply text-xl;
+}
+.checkbox-sizeMedium {
+	@apply text-2xl;
+}
+.checkbox-sizeLarge {
+	@apply text-3xl;
+}
+.checkbox-colorPrimary {
+	@apply text-surface-on;
+	@media (hover: hover) {
+		&:hover {
+			@apply bg-primary/10;
+		}
+	}
+	&.checked {
+		@apply text-primary;
+	}
+}

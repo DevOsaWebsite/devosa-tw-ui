@@ -1,0 +1,425 @@
+@import url("../typography/typography.css");
+
+.buttonBase-root {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	cursor: pointer;
+	box-sizing: border-box;
+	outline: 0;
+	margin: 0;
+
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+
+	@apply rounded transition-all;
+
+	@media (hover: hover) {
+		&:hover,
+		&:focus {
+			@apply ring-1 ring-inherit;
+		}
+	}
+	&:disabled {
+		@appy cursor-not-allowed;
+	}
+}
+
+.buttonSize-sm {
+	@apply py-1 px-3 gap-1.5 min-w-12;
+	&.buttonIcon-start {
+		@apply pl-3;
+	}
+	&.buttonIcon-end {
+		@apply pr-3;
+	}
+
+	&.buttonVariant-text {
+		@apply px-2;
+		&.buttonIcon-start {
+			@apply pr-3;
+		}
+		&.buttonIcon-end {
+			@apply pl-3;
+		}
+	}
+}
+.buttonSize-md {
+	@apply min-w-16 py-2.5 px-6;
+
+	&.buttonVariant-text {
+		@apply px-3;
+		&.buttonIcon-start {
+			@apply pr-4;
+		}
+		&.buttonIcon-end {
+			@apply pl-4;
+		}
+	}
+	&.buttonIcon-start {
+		@apply pl-4;
+	}
+	&.buttonIcon-end {
+		@apply pr-4;
+	}
+}
+
+.buttonSize-lg {
+	@apply py-4 px-9 text-lg;
+	&.buttonVariant-text {
+		@apply px-4;
+	}
+}
+
+.buttonVariant-text {
+	@apply border-0 bg-transparent shadow-none ring-0;
+	@media (hover: hover) {
+		&:hover {
+			@apply ring-0;
+		}
+		&:focus,
+		&:active {
+			@apply ring-2;
+		}
+	}
+	&.buttonColor-default {
+		@apply bg-transparent text-surface-on/80;
+		@media (hover: hover) {
+			&:hover,
+			&:focus {
+				@apply bg-surface-on/10 text-surface-on;
+			}
+		}
+		&:disabled {
+			@apply bg-transparent text-surface-on/30 ring-0 cursor-not-allowed;
+		}
+	}
+	&.buttonColor-container {
+		@apply bg-transparent text-surface-on-variant/80;
+		@media (hover: hover) {
+			&:hover,
+			&:focus {
+				@apply bg-surface-on-variant/10 text-surface-on-variant;
+			}
+		}
+		&:disabled {
+			@apply bg-transparent text-surface-on-variant/30 ring-0 cursor-not-allowed;
+		}
+	}
+	&.buttonColor-primary {
+		@media (hover: hover) {
+			@apply text-primary/80;
+			&:hover,
+			&:focus,
+			&:active {
+				@apply bg-primary/5 text-primary;
+			}
+			&:focus,
+			&:active {
+				@apply ring-primary-container;
+			}
+			&:disabled {
+				@apply bg-transparent text-primary/30 ring-0 cursor-not-allowed;
+			}
+		}
+	}
+	&.buttonColor-secondary {
+		@media (hover: hover) {
+			@apply text-secondary/80;
+			&:hover,
+			&:focus,
+			&:active {
+				@apply bg-secondary/5 text-secondary;
+			}
+			&:focus,
+			&:active {
+				@apply ring-secondary-container;
+			}
+			&:disabled {
+				@apply bg-transparent text-secondary/30 ring-0 cursor-not-allowed;
+			}
+		}
+	}
+	&.buttonColor-tertiary {
+		@media (hover: hover) {
+			@apply text-tertiary/80;
+			&:hover,
+			&:focus,
+			&:active {
+				@apply bg-tertiary/5 text-tertiary;
+			}
+			&:focus,
+			&:active {
+				@apply ring-tertiary-container;
+			}
+			&:disabled {
+				@apply bg-transparent text-tertiary/30 ring-0 cursor-not-allowed;
+			}
+		}
+	}
+	&.buttonColor-success {
+		@media (hover: hover) {
+			@apply text-success/80;
+			&:hover,
+			&:focus,
+			&:active {
+				@apply bg-success/5 text-success;
+			}
+			&:focus,
+			&:active {
+				@apply ring-success-container;
+			}
+			&:disabled {
+				@apply bg-transparent text-success/30 ring-0 cursor-not-allowed;
+			}
+		}
+	}
+	&.buttonColor-warning {
+		@media (hover: hover) {
+			@apply text-warning/80;
+			&:hover,
+			&:focus,
+			&:active {
+				@apply bg-warning/5 text-warning;
+			}
+			&:focus,
+			&:active {
+				@apply ring-warning-container;
+			}
+			&:disabled {
+				@apply bg-transparent text-warning/30 ring-0 cursor-not-allowed;
+			}
+		}
+	}
+	&.buttonColor-error {
+		@media (hover: hover) {
+			@apply text-error/80;
+			&:hover,
+			&:focus,
+			&:active {
+				@apply bg-error/5 text-error;
+			}
+			&:focus,
+			&:active {
+				@apply ring-error-container;
+			}
+			&:disabled {
+				@apply bg-transparent text-error/30 ring-0 cursor-not-allowed;
+			}
+		}
+	}
+}
+.buttonVariant-filled {
+	@apply border-0 ring-0;
+	@media (hover: hover) {
+		&:hover {
+			@apply shadow-lg border-0 ring-0;
+			&:disabled {
+				@apply shadow-none;
+			}
+		}
+		&:focus {
+			@apply ring-2;
+		}
+	}
+
+	&.buttonColor-default {
+		@apply bg-surface/80 text-surface-on/80;
+		@media (hover: hover) {
+			&:hover,
+			&:focus {
+				@apply bg-surface text-surface-on;
+			}
+		}
+		&:disabled {
+			@apply bg-surface/20 text-surface-on-variant/30 ring-0 cursor-not-allowed;
+		}
+	}
+	&.buttonColor-primary {
+		@apply bg-primary/80 text-primary-on;
+		@media (hover: hover) {
+			&:hover,
+			&:focus {
+				@apply bg-primary text-primary-on ring-primary-container;
+			}
+		}
+		&:disabled {
+			@apply bg-primary/5 text-primary-on-container/30 ring-0 cursor-not-allowed;
+		}
+	}
+	&.buttonColor-secondary {
+		@apply bg-secondary/80 text-secondary-on;
+		@media (hover: hover) {
+			&:hover,
+			&:focus {
+				@apply bg-secondary text-secondary-on ring-secondary-container;
+			}
+		}
+		&:disabled {
+			@apply bg-secondary/5 text-secondary-on-container/30 ring-0 cursor-not-allowed;
+		}
+	}
+	&.buttonColor-tertiary {
+		@apply bg-tertiary/80 text-tertiary-on;
+		@media (hover: hover) {
+			&:hover,
+			&:focus {
+				@apply bg-tertiary text-tertiary-on ring-tertiary-container;
+			}
+		}
+		&:disabled {
+			@apply bg-tertiary/5 text-tertiary-on-container/30 ring-0 cursor-not-allowed;
+		}
+	}
+	&.buttonColor-success {
+		@apply bg-success/80 text-success-on;
+		@media (hover: hover) {
+			&:hover,
+			&:focus {
+				@apply bg-success text-success-on ring-success-container;
+			}
+		}
+		&:disabled {
+			@apply bg-success/5 text-success-on-container/30 ring-0 cursor-not-allowed;
+		}
+	}
+	&.buttonColor-warning {
+		@apply bg-warning/80 text-warning-on;
+		@media (hover: hover) {
+			&:hover,
+			&:focus {
+				@apply bg-warning text-warning-on ring-warning-container;
+			}
+		}
+		&:disabled {
+			@apply bg-warning/5 text-warning-on-container/30 ring-0 cursor-not-allowed;
+		}
+	}
+	&.buttonColor-error {
+		@apply bg-error/80 text-error-on;
+		@media (hover: hover) {
+			&:hover,
+			&:focus {
+				@apply bg-error text-error-on ring-error-container;
+			}
+		}
+	}
+	&:disabled {
+		@apply bg-error/5 text-error-on-container/30 ring-0 cursor-not-allowed;
+	}
+}
+.buttonVariant-outlined {
+	border-width: 1px;
+	@media (hover: hover) {
+		&:hover {
+			@apply shadow-md;
+		}
+	}
+	&.buttonColor-default {
+		@apply bg-surface/10 border-surface-outline/70 text-surface-on;
+		@media (hover: hover) {
+			&:hover {
+				@apply bg-surface/15 border-surface-outline;
+			}
+		}
+		&:disabled {
+			@apply bg-surface/5 border-surface-outline/10 text-surface-on-variant/10 ring-0 cursor-not-allowed;
+		}
+	}
+	&.buttonColor-primary {
+		@apply bg-primary/5 border-primary/60 text-primary-on-container/70;
+		&:focus {
+			@apply ring-primary;
+		}
+		@media (hover: hover) {
+			&:hover,
+			&:focus {
+				@apply bg-primary/15 border-primary text-primary-on-container;
+			}
+		}
+		&:disabled {
+			@apply bg-primary/5 border-primary/10 text-primary-on-container/10 ring-0 cursor-not-allowed;
+		}
+	}
+	&.buttonColor-secondary {
+		@apply bg-secondary/5 border-secondary/60 text-secondary-on-container/70;
+		&:focus {
+			@apply ring-secondary;
+		}
+		@media (hover: hover) {
+			&:hover,
+			&:focus {
+				@apply bg-secondary/15 border-secondary text-secondary-on-container;
+			}
+		}
+		&:disabled {
+			@apply bg-secondary/5 border-secondary/10 text-secondary-on-container/10 ring-0 cursor-not-allowed;
+		}
+	}
+	&.buttonColor-tertiary {
+		@apply bg-tertiary/5 border-tertiary/60 text-tertiary-on-container/70;
+		&:focus {
+			@apply ring-tertiary;
+		}
+		@media (hover: hover) {
+			&:hover,
+			&:focus {
+				@apply bg-tertiary/15 border-tertiary text-tertiary-on-container;
+			}
+		}
+		&:disabled {
+			@apply bg-tertiary/5 border-tertiary/10 text-tertiary-on-container/10 ring-0 cursor-not-allowed;
+		}
+	}
+	&.buttonColor-error {
+		@apply bg-error/5 border-error/60 text-error-on-container/70;
+		&:focus {
+			@apply ring-error;
+		}
+		@media (hover: hover) {
+			&:hover,
+			&:focus {
+				@apply bg-error/15 border-error text-error-on-container;
+			}
+		}
+		&:disabled {
+			@apply bg-error/5 border-error/10 text-error-on-container/10 ring-0 cursor-not-allowed;
+		}
+	}
+	&.buttonColor-warning {
+		@apply bg-warning/5 border-warning/60 text-warning-on-container/70;
+		&:focus {
+			@apply ring-warning;
+		}
+		@media (hover: hover) {
+			&:hover,
+			&:focus {
+				@apply bg-warning/15 border-warning text-warning-on-container;
+			}
+		}
+		&:disabled {
+			@apply bg-warning/5 border-warning/10 text-warning-on-container/10 ring-0 cursor-not-allowed;
+		}
+	}
+	&.buttonColor-success {
+		@apply bg-success/5 border-success/60 text-success-on-container/70;
+		&:focus {
+			@apply ring-success;
+		}
+		@media (hover: hover) {
+			&:hover,
+			&:focus {
+				@apply bg-success/15 border-success text-success-on-container;
+			}
+		}
+		&:disabled {
+			@apply bg-success/5 border-success/10 text-success-on-container/10 ring-0 cursor-not-allowed;
+		}
+	}
+}

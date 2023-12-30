@@ -1,0 +1,17 @@
+.inputBase-root {
+	@apply relative w-full flex items-center box-border text-inherit bg-inherit border-inherit;
+}
+
+.inputBase-startAdornment {
+	@apply pl-4;
+	input {
+		@apply pl-0;
+	}
+}
+
+.inputBase-endAdornment {
+	@apply pr-4;
+	input {
+		@apply pr-0;
+	}
+}

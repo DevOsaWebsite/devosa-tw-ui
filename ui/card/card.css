@@ -1,0 +1,11 @@
+.card {
+	position: relative;
+	display: block;
+}
+
+.card__overflow-hidden {
+	overflow: hidden;
+}
+.card__overflow-visible {
+	overflow: visible;
+}

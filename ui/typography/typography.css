@@ -1,0 +1,50 @@
+.typography-root {
+	display: block;
+	padding: 0;
+	font-style: normal;
+}
+.typography-displayLarge {
+	@apply text-7xl font-bold sm:text-9xl;
+}
+.typography-displayMedium {
+	@apply text-6xl font-bold sm:text-8xl;
+}
+.typography-displaySmall {
+	@apply text-5xl font-bold sm:text-7xl;
+}
+.typography-headlineLarge {
+	@apply text-4xl font-bold sm:text-6xl;
+}
+.typography-headlineMedium {
+	@apply text-4xl font-bold sm:text-5xl;
+}
+.typography-headlineSmall {
+	@apply text-3xl font-bold sm:text-4xl;
+}
+.typography-titleLarge {
+	@apply text-2xl font-semibold sm:text-3xl;
+}
+.typography-titleMedium {
+	@apply text-xl font-semibold sm:text-2xl;
+}
+.typography-titleSmall {
+	@apply text-lg font-medium sm:text-xl;
+}
+.typography-bodyLarge {
+	@apply text-base font-medium sm:text-lg;
+}
+.typography-bodyMedium {
+	@apply text-sm font-medium sm:text-base;
+}
+.typography-bodySmall {
+	@apply text-xs sm:text-sm;
+}
+.typography-labelLarge {
+	@apply text-base font-semibold sm:text-lg;
+}
+.typography-labelMedium {
+	@apply text-sm font-semibold sm:text-base;
+}
+.typography-labelSmall {
+	@apply text-xs font-semibold sm:text-sm;
+}

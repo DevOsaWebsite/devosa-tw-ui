@@ -1,0 +1,15 @@
+.svgIcon-root {
+	@apply inline-flex w-[1em] h-[1em] select-none fill-current shrink-0 transition-[fill] duration-200;
+}
+.svgIcon-sizeSmall {
+	@apply text-xl;
+}
+.svgIcon-sizeMedium {
+	@apply text-2xl;
+}
+.svgIcon-sizeLarge {
+	@apply text-3xl;
+}
+.svgIcon-sizeInherit {
+	@apply text-inherit;
+}

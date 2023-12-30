@@ -1,0 +1,9 @@
+.inputAdornment-root {
+	@apply relative flex items-center justify-center text-inherit bg-transparent border-0 outline-none;
+}
+.inputAdornment-startAdornment {
+	@apply mr-[calc(var(--shape-padding-x-outlined)/2)];
+}
+.inputAdornment-endAdornment {
+	@apply ml-[calc(var(--shape-padding-x-outlined)/2)];
+}

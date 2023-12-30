@@ -1,0 +1,8 @@
+.inputLabel-root {
+	@apply absolute top-0 left-0 max-w-[calc(100%-24px)] block text-current text-ellipsis pointer-events-none origin-top-left translate-x-[var(--shape-padding-x-outlined)] translate-y-[var(--shape-padding-y-outlined)] transition-all;
+
+	.formControl:focus-within &,
+	&.animated {
+		@apply max-w-[calc(133%-32px)] -translate-y-[9px] scale-75 transition-all;
+	}
+}

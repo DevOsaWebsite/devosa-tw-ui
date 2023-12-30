@@ -1,0 +1,21 @@
+.formControl-root {
+	@apply relative inline-flex flex-col rounded bg-transparent;
+
+	&.formControl_default {
+		@apply text-surface-on-variant border-surface-outline;
+	}
+
+	&.formControl_primary {
+		@apply text-primary border-primary;
+	}
+
+	&.formControl_secondary {
+		@apply border-secondary text-secondary;
+	}
+	&.formControl_tertiary {
+		@apply border-tertiary text-tertiary;
+	}
+	&.formControl_error {
+		@apply border-error text-error;
+	}
+}

@@ -1,0 +1,10 @@
+.input-root {
+	@apply w-full inline-flex flex-1 bg-transparent shadow-none appearance-none outline-none px-[var(--shape-padding-x-outlined)] py-[var(--shape-padding-y-outlined)] text-current;
+
+	&::placeholder {
+		@apply text-surface-on-variant text-sm;
+	}
+	&:focus {
+		@apply outline-none ring-0 shadow-none;
+	}
+}

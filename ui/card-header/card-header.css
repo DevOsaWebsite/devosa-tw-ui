@@ -1,0 +1,29 @@
+.card-header {
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	padding: 1rem;
+}
+.card-header__action {
+	flex: 0 0 auto;
+	align-self: flex-start;
+
+	margin-top: -4px;
+	margin-right: -8px;
+	margin-bottom: -4px;
+}
+.card-header__avatar {
+	display: flex;
+	flex: 0 0 auto;
+	margin-right: 1rem;
+}
+
+.card-header__content {
+	flex: 1 1 auto;
+}
+
+.card-header__title {
+}
+.card-header__subtitle {
+}

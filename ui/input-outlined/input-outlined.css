@@ -1,0 +1,33 @@
+.inputOutlined-root {
+	@apply absolute inset-0 inset-x-0 -top-[5px] min-w-0 m-0 bg-inherit overflow-hidden pointer-events-none border-inherit border border-solid rounded z-10 pl-[calc(var(--shape-padding-x-outlined)*0.75)] transition-all duration-0;
+
+	legend {
+		@apply relative w-auto bg-inherit h-[11px] max-w-[0.01px] overflow-hidden text-xs text-inherit font-semibold leading-3 transform;
+
+		span {
+			@apply inline-block bg-inherit opacity-0 visible py-[6px] pr-1;
+		}
+	}
+
+	:focus-within ~ &,
+	&.animated {
+		legend {
+			@apply max-w-full;
+			span {
+				@apply max-w-full;
+			}
+		}
+	}
+
+	:focus-within ~ & {
+		&.inputOutlined-root {
+			@apply border-[3px];
+		}
+	}
+
+	:hover ~ & {
+		&.inputOutlined-root {
+			@apply border-[3px];
+		}
+	}
+}

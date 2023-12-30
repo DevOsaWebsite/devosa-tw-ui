@@ -1,0 +1,26 @@
+.toolbar {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	box-sizing: border-box;
+
+	padding: 0 12px;
+
+	@screen sm {
+		padding: 0 24px;
+	}
+}
+
+.toolbar__variant--regular {
+	min-height: 48px;
+
+	@screen sm {
+		min-height: 64px;
+	}
+}
+
+.toolbar__variant--dense {
+	min-height: 48px;
+}
