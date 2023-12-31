@@ -10,18 +10,27 @@
 	padding-right: 0.5rem;
 
 	@screen sm {
+		max-width: theme("maxWidth.screen-sm");
 		padding-left: 0.75rem;
 		padding-right: 0.75rem;
 	}
 	@screen md {
+		max-width: theme("maxWidth.screen-md");
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
 	@screen lg {
+		max-width: theme("maxWidth.screen-lg");
 		padding-left: 1.25rem;
 		padding-right: 1.25rem;
 	}
 	@screen xl {
+		max-width: theme("maxWidth.screen-xl");
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+	@screen 2xl {
+		max-width: theme("maxWidth.screen-2xl");
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
 	}

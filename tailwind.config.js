@@ -1,15 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
-  theme: {
-    extend: {
+	content: [],
+	theme: {
+		extend: {
 			cursor: {
 				inherit: {
-					cursor: 'inherit',
-				}
-			}
+					cursor: "inherit",
+				},
+			},
 		},
-  },
-  plugins: [],
-}
-
+	},
+	corePlugins: {
+		container: false,
+	},
+	plugins: [],
+};
