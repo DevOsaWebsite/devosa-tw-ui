@@ -1,18 +1,18 @@
-.appBar-root {
+.app-bar {
 	@apply bg-white shadow z-30;
 }
-.appBar-positionFixed {
+.app-bar__position--fixed {
 	@apply fixed top-0 left-0 right-0;
 }
-.appBar-positionAbsolute {
+.app-bar__position--absolute {
 	@apply absolute top-0 left-0 right-0;
 }
-.appBar-positionRelative {
+.app-bar__position--relative {
 	@apply relative;
 }
-.appBar-positionStatic {
+.app-bar__position--static {
 	@apply static;
 }
-.appBar-positionSticky {
+.app-bar__position--sticky {
 	@apply sticky top-0 left-0 right-0;
 }
