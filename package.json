@@ -2,9 +2,9 @@
 	"name": "devosa-tw-ui",
 	"version": "1.0.4",
 	"description": "",
-	"main": "index.js",
+	"main": "./build/index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"prepublish": "rm -rf build && tsc"
 	},
 	"author": "Osadchenko Sergey",
 	"license": "ISC",
