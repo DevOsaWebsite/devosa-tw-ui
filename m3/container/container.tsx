@@ -2,6 +2,8 @@ import React from "react";
 
 import { cn } from "../../lib/utils";
 
+import "./container.css";
+
 import { TVariantProps, variantProps } from "./container.styles";
 
 export type TContainerProps = {
