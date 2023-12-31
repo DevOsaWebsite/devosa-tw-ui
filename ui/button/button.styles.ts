@@ -4,9 +4,9 @@ const root = "button buttonBase-root";
 
 const variants = {
 	variant: {
-		text: "buttonVariant-text",
-		outlined: "buttonVariant-outlined",
-		filled: "buttonVariant-filled",
+		text: "button__variant--text",
+		outlined: "button__variant--outlined",
+		filled: "button__variant--filled",
 	},
 	color: {
 		default: "buttonColor-default",

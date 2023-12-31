@@ -40,7 +40,7 @@
 		@apply pr-3;
 	}
 
-	&.buttonVariant-text {
+	&.button__variant--text {
 		@apply px-2;
 		&.buttonIcon-start {
 			@apply pr-3;
@@ -53,7 +53,7 @@
 .buttonSize-md {
 	@apply min-w-16 py-2.5 px-6;
 
-	&.buttonVariant-text {
+	&.button__variant--text {
 		@apply px-3;
 		&.buttonIcon-start {
 			@apply pr-4;
@@ -72,12 +72,13 @@
 
 .buttonSize-lg {
 	@apply py-4 px-9 text-lg;
-	&.buttonVariant-text {
+	
+	&.button__variant--text {
 		@apply px-4;
 	}
 }
 
-.buttonVariant-text {
+.button__variant--text {
 	@apply border-0 bg-transparent shadow-none ring-0;
 	@media (hover: hover) {
 		&:hover {
@@ -215,7 +216,7 @@
 		}
 	}
 }
-.buttonVariant-filled {
+.button__variant--filled {
 	@apply border-0 ring-0;
 	@media (hover: hover) {
 		&:hover {
@@ -314,7 +315,7 @@
 		@apply bg-error/5 text-error-on-container/30 ring-0 cursor-not-allowed;
 	}
 }
-.buttonVariant-outlined {
+.button__variant--outlined {
 	border-width: 1px;
 	@media (hover: hover) {
 		&:hover {
